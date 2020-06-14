@@ -13,12 +13,17 @@
   <body>
     <div class="Wrapper">
       <h1>pyramid</h1>
-      <form action="">
-        <label for="number">how tall would you like your pyramid to be?</label>
-        <input type="number" id="number" />
-        <button type="submit" id="enter" onclick="getNumber();">
-          create!
-        </button>
+      <form action="" id="form">
+        <label for="number" name="number"
+          >how tall would you like your pyramid to be?</label
+        >
+        <input type="number" id="number" value="" name="number input" />
+        <div class="buttons">
+          <button type="button" id="enter">
+            create!
+          </button>
+          <input type="button" value="Reset" id="reset-btn" class="reset-btn" />
+        </div>
       </form>
       <div class="display" id="display"></div>
     </div>

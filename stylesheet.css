@@ -10,7 +10,11 @@ html {
 }
 
 .Wrapper {
+  width: 100vw;
+  height: 100vh;
   padding: 5%;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -28,6 +32,9 @@ form {
 label {
   font-size: 1.5rem;
 }
+::first-letter {
+  text-transform: capitalize;
+}
 
 input {
   width: 25%;
@@ -39,4 +46,28 @@ button {
   width: 25%;
   height: 2rem;
   text-transform: capitalize;
+  border: none;
+  background-color: rgb(109, 177, 8);
+  color: aliceblue;
+}
+
+.buttons {
+  width: 50%;
+}
+
+.reset-btn {
+  background-color: rgb(233, 233, 233);
+  border: none;
+}
+
+.display {
+  width: 25%;
+  place-self: center;
+}
+
+.box {
+  width: 200px;
+  color: rgb(255, 217, 0);
+  text-align: center;
+  font-size: 3.5rem;
 }
